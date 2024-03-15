@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ex02</title>
+</head>
+<body>
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+    <button onclick="tongAB();">
+        Tính tổng
+    </button>
+</body>
+<script language="javascript">
+    function tongAB()
+    {
+    var txta = document.getElementById('txta').value;
+    var txtb = document.getElementById('txtb').value;
+    if(txta == null || txta == "" || isNaN(txta))
+    {
+        alert('Vui lòng nhập số A hợp lệ');
+        return;
+    }
+    if(txtb == null || txtb == "" || isNaN(txtb))
+    {
+        alert('Vui lòng nhập số B hợp lệ');
+        return;
+    }
+    alert(parseInt(txta) + parseInt(txtb));
+    document.getElementById('txta').value = '';
+    document.getElementById('txtb').value = '';
+    }
+</script>
+</html>
