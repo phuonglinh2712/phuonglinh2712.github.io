@@ -126,10 +126,28 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+.Project{
+    padding-bottom: 10rem;
+}
+.Project h2{
+    margin-bottom: 4rem;
+}
+.Project .Project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.Project-container .Project-box{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
 .contact h2 {
     margin-bottom: 3rem;
 }
-
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
