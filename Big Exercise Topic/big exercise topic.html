@@ -7,190 +7,187 @@
     <title>Portfolio Website</title>
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- custom css -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-}
-:root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #754ef9;
-    --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
-}
-html {
-    font-size: 62,5%;
-    overflow-x: hidden;
-}
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 7%;
-    background: yellowgreen;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-}
-.logo {
-    font-size: 2.5rem;
-    color: var(--main-color);
-    font-weight: 600;
-    cursor: default;
-    margin-right: auto;
-}
-.navbar a {
-    position: relative;
-    font-size: 1.7rem;
-    color: var(--white-color);
-    font-weight: 500;
-    margin-right: 3.5rem;
-}
-.navbar a.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: .2rem;
-    background: var(--white-color);
-}
-#darkMode-icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
-    cursor: pointer;
-}
-section {
-    min-height: 100vh;
-    padding: 10rem 7% 2rem;
-}
-.home {
-    display: flex;
-    align-items: center;
-}
-.home .home-content {
-    max-width: 44rem;
-}
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: .3;
-}
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-}
-.home-content p {
-    font-size: 1.6rem;
-}
-.home-content .social-media {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
-}
-
-span {
-    color: var(--main-color);
-}
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    background: white;
-}
-.about-img img {
-    width: 40vw;
-}
-.heading {
-    font-size: 4.5rem;
-    text-align: center;
-}
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-}
-.about-content h3 {
-    font-size: 2rem;
-}
-.about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
-}
-.Project{
-    padding-bottom: 10rem;
-}
-.Project h2{
-    margin-bottom: 4rem;
-}
-.Project .Project-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.Project-container .Project-box{
-    position: relative;
-    display: flex;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
-}
-.contact h2 {
-    margin-bottom: 3rem;
-}
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-}
-.contact form .input-box input {
-    width: 49%;
-}
-.contact form textarea {
-    resize: none;
-}
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #333;
+            --main-color: #754ef9;
+            --white-color: #fdfdfd;
+            --shadow-color: rgba(0, 0, 0, .2);
+        }
+        html {
+            font-size: 62,5%;
+            overflow-x: hidden;
+        }
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem 7%;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 2.5rem;
+            color: var(--main-color);
+            font-weight: 600;
+            cursor: default;
+            margin-right: auto;
+        }
+        .navbar a {
+            position: relative;
+            font-size: 1.7rem;
+            color: var(--white-color);
+            font-weight: 500;
+            margin-right: 3.5rem;
+        }
+        .navbar a.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: .2rem;
+            background: var(--white-color);
+        }
+        #darkMode-icon {
+            font-size: 2.4rem;
+            color: var(--white-color);
+            cursor: pointer;
+        }
+        section {
+            min-height: 100vh;
+            padding: 10rem 7% 2rem;
+        }
+        .home {
+            display: flex;
+            align-items: center;
+        }
+        .home .home-content {
+            max-width: 44rem;
+        }
+        .home-content h3 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: .3;
+        }
+        .home-content h1 {
+            font-size: 5.6rem;
+            font-weight: 700;
+            margin-bottom: .3rem;
+        }
+        .home-content p {
+            font-size: 1.6rem;
+        }
+        .home-content .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background: transparent;
+            border: .2rem solid var(--main-color);
+            border-radius: 50%;
+            box-shadow: 0 .2rem .5rem var(--shadow-color);
+            font-size: 2rem;
+            color: var(--main-color);
+            margin: 2.5rem 1.5rem 3rem 0;
+            transition: .5s ease;
+        }
+        .home-content .social-media a:hover {
+            background: var(--main-color);
+            color: var(--white-color);
+        }
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 2.8rem;
+            background: var(--main-color);
+            border-radius: .6rem;
+            box-shadow: 0 .2rem .5rem var(--shadow-color);
+            font-size: 1.6rem;
+            color: var(--white-color);
+            letter-spacing: .1rem;
+            font-weight: 600;
+            border: .2rem solid transparent;
+            transition: .5s ease;
+        }
+        .btn:hover {
+            background: transparent;
+            color: var(--main-color);
+            border-color: var(--main-color);
+        }
+        .home .profession-container {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 768px;
+            height: 768px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .home .profession-container .profession-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 768px;
+            height: 768px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .home .profession-box .profession {
+            position: absolute;
+            left: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: var(--main-color);
+            transform: rotate(calc(360deg / 4 * var(--i)));
+            transform-origin: 384px;
+            background: var(--bg-color);
+            padding: 13px 0;
+        }
+        .home .profession-box .profession:nth-child(1) i {
+            margin-right: 15px;
+        }
+        .home .profession-box .profession:nth-child(2),
+        .home .profession-box .profession:nth-child(4) {
+            padding: 20px;
+        }
+        .home .profession i {
+            font-size: 3.8rem;
+        }
+        .home .profession h3 {
+            font-size: 3.2rem;
+            line-height: 1;
+            font-weight: 600;
+        }
+        .home .profession-box .circle {
+            width: 560px;
+            height: 560px;
+            border: 3px solid var(--main-color);
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -228,95 +225,27 @@ span {
             </div>
             <a href="#" class="btn">Download CV</a>
         </div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code' ></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Degigner</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video'></i>
+                    <h3>Videographer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+        </div>
     </section>
-    <!-- ABOUT SECTION DESIGN -->
- <SECTion class="about" id="about">
-    <div class="about-img">
-        <img src="image/ABOUT.jpg" alt="">
-    </div>
-    <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Hi, I'm Hoang Anh</h3>
-        <p>Tôi đến từ Bắc Ninh, hiện tại tôi đang học tại Trường Quốc tế- Đại học Quốc gia Hà Nội</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
- </SECTion>
-
- <!-- skills section design -->
- <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-container">
-        <div class="skills-box">
-            <i class='code-alt' ></i>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eum nemo iste veritatis, ipsam, quibusdam quidem minima dolore debitis laborum commodi voluptates eos totam illo! Voluptate harum molestias minima. Id?.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </div>
-
-    <!-- portfolio section design-->
-<selection class="Project" id="Project">
-    <h2 class="heading">Latest <span>Project</span></h2>
-
-    <div class="Project-container">
-        <div class="Project-box">
-            <img src="images/img1.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-            
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img2.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img3.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img4.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-        <div class="Project-box">
-            <img src="images/img1.jpg" alt="">
-            <div class="Project-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
-            </div>
-        </div>
-    </div>
-</selection>
-
-    <!-- contact section design  -->
-    <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <from action="#">
-      <div class="inout-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
-      </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message">
-    </from>
-  </section>
 </body>
 </html>
