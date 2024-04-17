@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -188,10 +187,27 @@
             border: 3px solid var(--main-color);
             border-radius: 50%;
         }
+        .home .profession-container .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 384px solid var(--main-color);
+            border-right: 384px solid var(--main-color);
+            border-bottom: 384px solid var(--main-color);
+            border-left: 384px solid transparent;
+        }
+        .home-img img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
-    <!-- header design -->
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
         <nav class="navbar">
@@ -203,7 +219,6 @@
         </nav>
         <div class="bx bx-moon" id="darkMode-icon"></div>
     </header>
-    <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, This is</h3>
@@ -245,6 +260,10 @@
                 </div>
                 <div class="circle"></div>
             </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="" alt="">
         </div>
     </section>
 </body>
