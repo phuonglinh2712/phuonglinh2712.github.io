@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+        }
+        :root {
+            --text-color: #333;
+            --main-color: #754ef9;
+            --white-color: #fdfdfd;
+            --shadow-color: rgba(0, 0, 0, .2);
+        }
+        html {
+            font-size: 90%;
+            overflow-x: hidden;
+        }
+        body {
+            background: var(--text-color);
+            color: var(--white-color);
+        }
+        .project {
+            padding-bottom: 10rem;
+        }
+        .project h2 {
+            font-size: 5rem;;
+    margin-bottom: 10rem;
+    text-align: center;
+        }
+        .project .project-container {
+
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            gap: 2.5rem;
+            display: grid
+        }
+        .project-container .project-box {
+            position: relative;
+            display: flex;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .project-box img {
+            max-width: 100%;
+            height: auto;
+            transition: .5s ease;
+        }
+        .project-box:hover img {
+            transform: scale(1.1);
+        }
+        .project-box .project-layer {
+            position: absolute;
+            bottom: 0;
+            left: 5;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+            color: var(--white-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 4rem;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .project-box:hover .project-layer {
+            opacity: 1;
+        }
+        .project-layer p {
+            color: white;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0px;
+            width: 300px;
+            padding: 10px;
+            word-wrap: break-word;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <selection class="project" id="Project">
+        <h2 class="heading"><span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="images/img1.jpg" alt="">
+                <div class="project-layer">
+                    <p>It was a pleasure working with Ryan Carson on the branding and website design for 121G.fund. I created a bold two-color brand with a message expressed through large, simple geometric shapes.</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/img2.jpg" alt="">
+                <div class="project-layer">
+                    <p>10 years ago I created the new brand identity and website for Leeds-based digital agency MIXD. Ten years on, I've redesigned it for 2024 and beyond. The website was completely redesigned to better reflect where they have been over the past 10 years. The identity remains the same but is more focused and distinct.</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/img3.jpg" alt="">
+                <div class="project-layer">
+                    <p>Berocca commissioned me to design a set of three posters to promote their 'Berocca Performance' drinks. Posters are used in bus stops and magazines.</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/img4.jpg" alt="">
+                <div class="project-layer">
+                    <p>Identity, illustration, packaging and web design for skincare brand Luma & Leaf.</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/img5.jpg" alt="">
+                <div class="project-layer">
+                    <p>Friday Brands is a US-based company that invests in great ideas and turns them into profitable brands.</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/img6.jpg" alt="">
+                <div class="project-layer">
+                    <p>Branding, illustration and web design work is created for the composer's music British musician Tony Kus. I wanted to create a design directly inspired by Tony's music. I create color layers of varying depths to depict the music.</p>
+                </div>
+    </selection>
+</body>
+</html>
